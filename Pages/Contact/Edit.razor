@@ -1,0 +1,153 @@
+﻿@page "/contact/{contactId}"
+@using System.Text.Json;
+@using Microsoft.JSInterop;
+@inject HttpClient httpClient;
+@inject IJSRuntime JSRuntime;
+@inject NavigationManager navigationManager;
+
+
+@if (ContactGuid!=null && ContactGuid == Guid.Empty)
+{
+    <h3>Add Contact</h3>
+}
+else
+{
+    <h3>Edit Contact</h3>
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            @if (Contact != null)
+            {
+                <div>
+                    <div class="mb-3">
+                        <label class="form-label" for="firstName">First Name</label>
+                        <input class="form-control" id="firstName" @bind="Contact.FirstName" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="lastName">Last Name</label>
+                        <input class="form-control" id="lastName" @bind="Contact.LastName" />
+                    </div>
+
+                    <h3>Addresses</h3>
+                    <button class="btn btn-primary" @onclick="AddAdress">
+                        Add Address
+                    </button>
+
+                    @if (Contact.Addresses != null)
+                    {
+                        @foreach (var address in Contact.Addresses)
+                        {
+                            <div style="border:1px solid gray; padding:5px; margin-bottom:5px">
+                                <div class="mb-3">
+                                    <label class="form-label" for="Street">Street</label>
+                                    <input class="form-control" id="Street" @bind="address.Street" />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="City">City</label>
+                                    <input class="form-control" id="City" @bind="address.City" />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="State">State</label>
+                                    <input class="form-control" id="State" @bind="address.State" />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="zipCode">Zip Code</label>
+                                    <input class="form-control" id="zipCode" @bind="address.ZipCode" />
+                                </div>
+
+                                <div class="mb-3">
+                                    <button @onclick="()=> RemoveAddress(address)" class="btn btn-danger">Remove Address</button>
+                                </div>
+                            </div>
+                        }
+                    }
+
+
+
+                    <button class="btn btn-primary" @onclick="SaveChanges">Save</button>
+                </div>
+            }
+            else
+            {
+                <div>Loading...</div>
+            }
+
+        </div>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public string ContactId { get; set; }
+    public ContactListApp.Shared.Contact Contact { get; set; }
+
+    private Guid ContactGuid { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Guid contactGuid;
+        Guid.TryParse(ContactId, out contactGuid);
+        ContactGuid = contactGuid;
+
+        if (ContactGuid == Guid.Empty)
+        {
+            Contact = new ContactListApp.Shared.Contact()
+            {
+                Id = ContactGuid
+            };
+        }
+        else
+            Contact = await httpClient.GetFromJsonAsync<ContactListApp.Shared.Contact>($"api/contact/{ContactId}");
+    }
+
+    private async Task RemoveAddress(ContactListApp.Shared.Address address)
+    {
+        Contact.Addresses.Remove(address);
+    }
+
+    private async Task AddAdress()
+    {
+        if (Contact.Addresses == null)
+        {
+            Contact.Addresses = new List<ContactListApp.Shared.Address>();
+        }
+
+        Contact.Addresses.Add(new ContactListApp.Shared.Address()
+        {
+            Id = Guid.Empty
+        });
+
+    }
+
+    private async Task SaveChanges()
+    {
+        var json = JsonSerializer.Serialize(Contact);
+
+        var content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+
+        if (ContactGuid == Guid.Empty)
+        {
+            var response = await httpClient.PostAsync("api/contact", content);
+            if (response.IsSuccessStatusCode)
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Contact added successfully");
+                var contact = await response.Content.ReadFromJsonAsync<ContactListApp.Shared.Contact>();
+                navigationManager.NavigateTo($"contact/{contact.Id}");
+            }
+        }
+        else
+        {
+            var response = await httpClient.PutAsync("api/contact", content);
+            if (response.IsSuccessStatusCode)
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Contact updated successfully");
+            }
+        }
+
+
+    }
+}
+
