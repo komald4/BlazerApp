@@ -1,23 +1,29 @@
 ﻿<Properties StartupConfiguration="{1A5C60FB-7C94-43F2-BE9C-F00D9DC25847}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.ContactListApp.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ContextListApp.client/ContacttListApp.sln">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ContactController.cs">
     <Files>
       <File FileName="ContextListApp.client/ContacttListApp.sln" Line="1" Column="1" />
+      <File FileName="Controllers/ContactController.cs" Line="21" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ContactListApp.API" expanded="True">
-            <Node name="ContactListApp.API" expanded="True" selected="True" />
+            <Node name="ContactListApp.API">
+              <Node name="ContextListApp.client" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ContactController.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
