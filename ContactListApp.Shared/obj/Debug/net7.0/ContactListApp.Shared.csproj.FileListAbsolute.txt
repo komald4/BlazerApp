@@ -10,3 +10,15 @@
 /Users/komal/Projects/ContactListApp.Shared/obj/Debug/net7.0/refint/ContactListApp.Shared.dll
 /Users/komal/Projects/ContactListApp.Shared/obj/Debug/net7.0/ContactListApp.Shared.pdb
 /Users/komal/Projects/ContactListApp.Shared/obj/Debug/net7.0/ref/ContactListApp.Shared.dll
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/bin/Debug/net7.0/ContactListApp.Shared.deps.json
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/bin/Debug/net7.0/ContactListApp.Shared.dll
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/bin/Debug/net7.0/ContactListApp.Shared.pdb
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/ContactListApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/ContactListApp.Shared.AssemblyInfoInputs.cache
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/ContactListApp.Shared.AssemblyInfo.cs
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/ContactListApp.Shared.csproj.CoreCompileInputs.cache
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/ContactListApp.Shared.sourcelink.json
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/ContactListApp.Shared.dll
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/refint/ContactListApp.Shared.dll
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/ContactListApp.Shared.pdb
+/Users/komal/Projects/BlazerApp/ContactListApp.Shared/obj/Debug/net7.0/ref/ContactListApp.Shared.dll

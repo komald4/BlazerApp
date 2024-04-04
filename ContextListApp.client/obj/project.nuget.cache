@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "auNFWNcqA9/OG/+dHM3BbFNaIdT6dJwbh4PcEn859Zn4Vya0d+0vSbLY/nxk5X/wmjx8GiM2iFIFoTrmBk85vA==",
+  "dgSpecHash": "fAGBewEz7RQgeSQYLi9eHyZGf2hnSlsGfkvDFPU+D7Gh5B039prcXK8PX/6Dc4J6ocvmpZ88Ku+xkdkGFpiUGw==",
   "success": true,
-  "projectFilePath": "/Users/komal/Projects/ContextListApp.client/ContactListApp.client.csproj",
+  "projectFilePath": "/Users/komal/Projects/BlazerApp/ContextListApp.client/ContactListApp.client.csproj",
   "expectedPackageFiles": [
     "/Users/komal/.nuget/packages/microsoft.aspnetcore.authorization/7.0.17/microsoft.aspnetcore.authorization.7.0.17.nupkg.sha512",
     "/Users/komal/.nuget/packages/microsoft.aspnetcore.components/7.0.17/microsoft.aspnetcore.components.7.0.17.nupkg.sha512",
@@ -28,6 +28,9 @@
     "/Users/komal/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "/Users/komal/.nuget/packages/microsoft.jsinterop/7.0.17/microsoft.jsinterop.7.0.17.nupkg.sha512",
     "/Users/komal/.nuget/packages/microsoft.jsinterop.webassembly/7.0.17/microsoft.jsinterop.webassembly.7.0.17.nupkg.sha512",
+    "/Users/komal/.nuget/packages/microsoft.net.illink.analyzers/7.0.100-1.23211.1/microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
+    "/Users/komal/.nuget/packages/microsoft.net.illink.tasks/7.0.100-1.23211.1/microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
+    "/Users/komal/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.3/microsoft.net.sdk.webassembly.pack.8.0.3.nupkg.sha512",
     "/Users/komal/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
     "/Users/komal/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/komal/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512"
