@@ -1,0 +1,12 @@
+﻿<Properties StartupConfiguration="{CA18FB21-3AA1-4DF4-AF00-276E87C0EB7A}|https">
+  <MonoDevelop.Ide.ItemProperties.ContactListApp.client PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{CA18FB21-3AA1-4DF4-AF00-276E87C0EB7A}" ItemName="ContactListApp.API" ConfigurationId="https" />
+        <StartupItem ItemId="{297FBF10-DA89-4FB5-A91E-197D1D0ADE4D}" ItemName="ContactListApp.client" ConfigurationId="https" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.ContactListApp.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

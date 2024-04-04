@@ -1,0 +1,77 @@
+﻿@page "/contact/"
+@using System.Net.Http.Json;
+
+@inject HttpClient httpClient;
+@inject NavigationManager navigationManager;
+@using Microsoft.JSInterop;
+@inject IJSRuntime JSRuntime;
+
+
+<div style="display: flex; justify-content: space-between;">
+    <h3>Contacts</h3>
+    <button @onclick="AddContact" class="btn btn-primary">Add Contact</button>
+</div>
+@if (contacts != null)
+{
+    <table class="table">
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Address</td>
+            <td>Optin</td>
+        </tr>
+        @foreach (var contact in contacts)
+        {
+            <tr>
+                <td>@contact.FirstName</td>
+                <td>@contact.LastName</td>
+                <td>
+                    @foreach (var address in contact.Addresses)
+                    {
+                        <div>
+                            @address.City, @address.State
+                        </div>
+                    }
+                </td>
+                <td>
+                    <button @onclick="()=> EditContact(contact)">Edit</button>
+                    <button @onclick="()=> DeleteContact(contact)">Delete</button>
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+
+@code{
+    private List<ContactListApp.Shared.Contact> contacts;
+    protected override async Task OnInitializedAsync()
+    {
+        contacts = await FetchContacts();
+
+    }
+
+    public void AddContact()
+    {
+        navigationManager.NavigateTo($"contact/{Guid.Empty}");
+    }
+
+    public void EditContact(ContactListApp.Shared.Contact contact)
+    {
+        navigationManager.NavigateTo($"contact/{contact.Id}");
+    }
+
+    private async Task<List<ContactListApp.Shared.Contact>> FetchContacts()
+    {
+        return await httpClient.GetFromJsonAsync<List<ContactListApp.Shared.Contact>>("/api/contact");
+    }
+
+    public async Task DeleteContact(ContactListApp.Shared.Contact contact)
+    {
+        await httpClient.DeleteAsync($"/api/contact/{contact.Id}");
+        contacts.Remove(contact);
+        await JSRuntime.InvokeVoidAsync("alert", "Contact removed successfully");
+    }
+
+
+}

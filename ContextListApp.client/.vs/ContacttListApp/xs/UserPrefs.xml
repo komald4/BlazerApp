@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{785ACC8C-F19A-4A57-8B48-F76AABB67135}" ItemName="ContactListApp.API" />
+        <StartupItem ItemId="{297FBF10-DA89-4FB5-A91E-197D1D0ADE4D}" ItemName="ContactListApp.client" ConfigurationId="https" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.ContactListApp.client PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Contact/Edit.razor">
+    <Files>
+      <File FileName="Pages/Contact/Edit.razor" Line="1" Column="1" />
+      <File FileName="Pages/Contact/Index.razor" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ContacttListApp" expanded="True">
+            <Node name="ContactListApp.BAL" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
