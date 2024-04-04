@@ -1,0 +1,15 @@
+/Users/komal/Projects/ContactListApp.BAL/bin/Debug/net7.0/ContactListApp.BAL.deps.json
+/Users/komal/Projects/ContactListApp.BAL/bin/Debug/net7.0/ContactListApp.BAL.dll
+/Users/komal/Projects/ContactListApp.BAL/bin/Debug/net7.0/ContactListApp.BAL.pdb
+/Users/komal/Projects/ContactListApp.BAL/bin/Debug/net7.0/ContactListApp.Shared.dll
+/Users/komal/Projects/ContactListApp.BAL/bin/Debug/net7.0/ContactListApp.Shared.pdb
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ContactListApp.BAL.csproj.AssemblyReference.cache
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ContactListApp.BAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ContactListApp.BAL.AssemblyInfoInputs.cache
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ContactListApp.BAL.AssemblyInfo.cs
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ContactListApp.BAL.csproj.CoreCompileInputs.cache
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ContactListApp.BAL.csproj.CopyComplete
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ContactListApp.BAL.dll
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/refint/ContactListApp.BAL.dll
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ContactListApp.BAL.pdb
+/Users/komal/Projects/ContactListApp.BAL/obj/Debug/net7.0/ref/ContactListApp.BAL.dll

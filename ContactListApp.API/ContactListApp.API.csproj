@@ -1,0 +1,157 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.17" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.17">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.2.0" />
+    <PackageReference Include="System.Net.Http.Json" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContactListApp.DAL\ContactListApp.DAL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ContactListApp.BAL\ContactListApp.BAL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ContactListApp.Shared\ContactListApp.Shared.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContextListApp.client\ContacttListApp.sln" />
+    <None Include="ContextListApp.client\ContactListApp.client.csproj" />
+    <None Include="ContextListApp.client\.git\ORIG_HEAD" />
+    <None Include="ContextListApp.client\.git\config" />
+    <None Include="ContextListApp.client\.git\HEAD" />
+    <None Include="ContextListApp.client\.git\description" />
+    <None Include="ContextListApp.client\.git\index" />
+    <None Include="ContextListApp.client\.git\COMMIT_EDITMSG" />
+    <None Include="ContextListApp.client\.git\FETCH_HEAD" />
+    <None Include="ContextListApp.client\.git\info\exclude" />
+    <None Include="ContextListApp.client\.git\logs\HEAD" />
+    <None Include="ContextListApp.client\.git\logs\refs\stash" />
+    <None Include="ContextListApp.client\.git\logs\refs\heads\master" />
+    <None Include="ContextListApp.client\.git\logs\refs\heads\CRUD" />
+    <None Include="ContextListApp.client\.git\logs\refs\remotes\BlazerApp\master" />
+    <None Include="ContextListApp.client\.git\logs\refs\remotes\BlazerApp\CRUD" />
+    <None Include="ContextListApp.client\.git\logs\refs\remotes\BlazerApp\main" />
+    <None Include="ContextListApp.client\.git\hooks\commit-msg.sample" />
+    <None Include="ContextListApp.client\.git\hooks\pre-rebase.sample" />
+    <None Include="ContextListApp.client\.git\hooks\pre-commit.sample" />
+    <None Include="ContextListApp.client\.git\hooks\applypatch-msg.sample" />
+    <None Include="ContextListApp.client\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="ContextListApp.client\.git\hooks\pre-receive.sample" />
+    <None Include="ContextListApp.client\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="ContextListApp.client\.git\hooks\post-update.sample" />
+    <None Include="ContextListApp.client\.git\hooks\pre-merge-commit.sample" />
+    <None Include="ContextListApp.client\.git\hooks\pre-applypatch.sample" />
+    <None Include="ContextListApp.client\.git\hooks\pre-push.sample" />
+    <None Include="ContextListApp.client\.git\hooks\update.sample" />
+    <None Include="ContextListApp.client\.git\refs\stash" />
+    <None Include="ContextListApp.client\.git\refs\heads\master" />
+    <None Include="ContextListApp.client\.git\refs\heads\CRUD" />
+    <None Include="ContextListApp.client\.git\refs\remotes\BlazerApp\master" />
+    <None Include="ContextListApp.client\.git\refs\remotes\BlazerApp\CRUD" />
+    <None Include="ContextListApp.client\.git\refs\remotes\BlazerApp\main" />
+    <None Include="ContextListApp.client\.git\objects\61\05f8158586fb58eb5326dd306216ed841386c0" />
+    <None Include="ContextListApp.client\.git\objects\92\275dbc1a7901afa3301a45a1dc3c91b9f0e259" />
+    <None Include="ContextListApp.client\.git\objects\04\7ab534282c531ea88ff2eb4c82974f5289e14d" />
+    <None Include="ContextListApp.client\.git\objects\56\68bce5888cf0c449f6b6a90dc91514885aaca6" />
+    <None Include="ContextListApp.client\.git\objects\51\bff1c1f9dc254e5109d4310cd3d1141a5ec66c" />
+    <None Include="ContextListApp.client\.git\objects\60\f5744681be3530099bc43a8f9cb74169a36e19" />
+    <None Include="ContextListApp.client\.git\objects\5a\d66563c5d9301283c60a589405ebb917747cf5" />
+    <None Include="ContextListApp.client\.git\objects\05\2c805aeee08d5f7893d0b181e8b7c83058b5c7" />
+    <None Include="ContextListApp.client\.git\objects\9d\e2273cb75b6562bd3f30c91e3edbf42f53b118" />
+    <None Include="ContextListApp.client\.git\objects\d9\b7987194fab1a6cb2419dcca60b1922302c17e" />
+    <None Include="ContextListApp.client\.git\objects\ad\3f4bcf8b23232b0f2ebfcf868250486136dd3e" />
+    <None Include="ContextListApp.client\.git\objects\da\349ae4f5bf6a366f98f3ce283cc62dcef78cb4" />
+    <None Include="ContextListApp.client\.git\objects\da\e0b8f9d98aae5512c5cd294569ee14334d731f" />
+    <None Include="ContextListApp.client\.git\objects\d6\e582086b41e63bc334e0dd62e0a0eab7c7f313" />
+    <None Include="ContextListApp.client\.git\objects\bc\7edde51be654ac61e2054ef398cd4a10669fae" />
+    <None Include="ContextListApp.client\.git\objects\e5\0f56971a7534ddc922afe153d037b1cbf08654" />
+    <None Include="ContextListApp.client\.git\objects\e2\c0c40b02cd209868a201ba5d48572235ef6f9b" />
+    <None Include="ContextListApp.client\.git\objects\f4\76a92b8ba69de9976a32acfd8c58121f6f44ad" />
+    <None Include="ContextListApp.client\.git\objects\f4\e4259e6cb38ba44855d86aedaca2a49f15aa0b" />
+    <None Include="ContextListApp.client\.git\objects\eb\a12221971da039c9d6eda87c066573114edc40" />
+    <None Include="ContextListApp.client\.git\objects\c9\ab9189696cf3e6e12d57e980e83747adb2331d" />
+    <None Include="ContextListApp.client\.git\objects\fd\a54e68c771b4c3fe2148187aaccbf47b465312" />
+    <None Include="ContextListApp.client\.git\objects\f2\62799816fcab2aeec961c1587c8db0e4475998" />
+    <None Include="ContextListApp.client\.git\objects\fb\79da1731012b480165ffade860fb97ad4ff418" />
+    <None Include="ContextListApp.client\.git\objects\ed\b69bbe550d8928c972200e477d9a4b5ee18bc1" />
+    <None Include="ContextListApp.client\.git\objects\c6\6f4577df79a5fd5f689253d9654233a8f7c5dc" />
+    <None Include="ContextListApp.client\.git\objects\20\1d715fa6aed4ccaf2f5f092a0de12a2a02ac81" />
+    <None Include="ContextListApp.client\.git\objects\18\63ef98ed532a401b61a7da01c05d3b8c7c2a79" />
+    <None Include="ContextListApp.client\.git\objects\4b\ddb07c46d3e730119ee19880177510bc4cd03d" />
+    <None Include="ContextListApp.client\.git\objects\7d\03f967607057e1992c67fd328f1e5572435836" />
+    <None Include="ContextListApp.client\.git\objects\16\6f56da7612ea74df6a297154c8d281a4f28a14" />
+    <None Include="ContextListApp.client\.git\objects\87\965c70cc61082d1d5470fc9fd5713195ec9b2f" />
+    <None Include="ContextListApp.client\.git\objects\17\ffc13631a5a41744044cb1bbdd02ae19b54103" />
+    <None Include="ContextListApp.client\.git\objects\7e\2d3d6b48c077945edf5133b41d0459268a9b34" />
+    <None Include="ContextListApp.client\.git\objects\4d\6009a03b13c1f542062358005dde8dd55e3988" />
+    <None Include="ContextListApp.client\.git\objects\81\aa4c1b308a25b3bd257fbb4409720ce074a1b3" />
+    <None Include="ContextListApp.client\.git\objects\44\ef9255da7ad8f92391045a3a85cbb3c334f873" />
+    <None Include="ContextListApp.client\.git\objects\2a\d9a81d19ccbdfafaabc6289b613b66b20023e3" />
+    <None Include="ContextListApp.client\.git\objects\43\3d091b421ce226defa3cdd7fca8d2bfe912ea0" />
+    <None Include="ContextListApp.client\.git\objects\07\64bc9711af6f20263302c3ab223ea5de73673f" />
+    <None Include="ContextListApp.client\.git\objects\5c\42f23b1e6f63b18fd56caf8db306db5b5c2e7a" />
+    <None Include="ContextListApp.client\.git\objects\54\fb628cc44776b4fbad4efaecf39dd7e2dcd6fa" />
+    <None Include="ContextListApp.client\.git\objects\53\5996ab5a8ec652e4d5346b3241068848e308b0" />
+    <None Include="ContextListApp.client\.git\objects\08\f4b601283ddb26f73e43b46a55d697f4a46903" />
+    <None Include="ContextListApp.client\.git\objects\39\cc27734a61eb25ede0424898ef28a511e5f9f7" />
+    <None Include="ContextListApp.client\.git\objects\99\d17b4dcc1679bf9d4cc39222466c122a35a5de" />
+    <None Include="ContextListApp.client\.git\objects\55\1146e0481a6878898e6119ebba9c0b96eae935" />
+    <None Include="ContextListApp.client\.git\objects\64\6e8ae7465e0b4e0b67a7b80784e0b464cb93be" />
+    <None Include="ContextListApp.client\.git\objects\90\e643ce9717e4f8949240692075675d5610ab51" />
+    <None Include="ContextListApp.client\.git\objects\ba\3e3db1e69a032fb03c0d560da579fc5e777757" />
+    <None Include="ContextListApp.client\.git\objects\ba\5e01c5e8573066ccd921aa88d4b3f3954d156a" />
+    <None Include="ContextListApp.client\.git\objects\aa\ac525a819aaa832e97de60caa28b50c36fa973" />
+    <None Include="ContextListApp.client\.git\objects\db\4813631cf476e06f0f06914d6e5ad232c92a41" />
+    <None Include="ContextListApp.client\.git\objects\db\f00f59ef9c49cdf2d1c7be24a52be61a4c9d3f" />
+    <None Include="ContextListApp.client\.git\objects\c3\79b947210571a7a2b56251dffef1988ecf1ef0" />
+    <None Include="ContextListApp.client\.git\objects\cd\396189954d26b2911d4baf6add08a3e55c9e84" />
+    <None Include="ContextListApp.client\.git\objects\cc\e4b0bf83a45c0b1bfe355c5c8124168215d939" />
+    <None Include="ContextListApp.client\.git\objects\e6\39d8faf9d57ff17191c0d6d0422399417b33b4" />
+    <None Include="ContextListApp.client\.git\objects\f9\8177dbf711863eff7c90f84d5d419d02d99ba8" />
+    <None Include="ContextListApp.client\.git\objects\f9\309988aeab3868040d3b322658902098eba27f" />
+    <None Include="ContextListApp.client\.git\objects\fa\b604866cd5e55ef4525ea22e420c411f510b01" />
+    <None Include="ContextListApp.client\.git\objects\c2\2d6a497350f5df3e41ade110278cdbeff066ec" />
+    <None Include="ContextListApp.client\.git\objects\f6\bd6846a252b4474223c3f62698f53c0746d635" />
+    <None Include="ContextListApp.client\.git\objects\e9\68faf0125c1ea93c6fffa212c048b484fd58e1" />
+    <None Include="ContextListApp.client\.git\objects\e7\62e9330ff496ab888f80744f428cb3bb1b8727" />
+    <None Include="ContextListApp.client\.git\objects\2c\711ee541b9c049053456acc809efb31d0c2c7a" />
+    <None Include="ContextListApp.client\.git\objects\48\065420e2ab9fd2e88b36f47d4ecab95904876f" />
+    <None Include="ContextListApp.client\.git\objects\70\cfeb138554ed681a6bfc6917328e66af0ec7bf" />
+    <None Include="ContextListApp.client\.git\objects\84\22b59695935d180d11d5dbe99653e711097819" />
+    <None Include="ContextListApp.client\.git\objects\24\891717d5e576eca409f4820a04f7219f842aa7" />
+    <None Include="ContextListApp.client\.git\objects\12\c68b77222d05cb25f1a30dcd48f92c14aac420" />
+    <None Include="ContextListApp.client\.git\objects\40\4686e27db63558ba16a81795e49850089f0507" />
+    <None Include="ContextListApp.client\.git\objects\78\e2052e37f49cfc6941a603ee1680dd696bda89" />
+    <None Include="ContextListApp.client\.git\objects\7f\10f55dde5e6e7a47132969a29979682c7b6a85" />
+    <None Include="ContextListApp.client\.vs\ContextListApp\xs\UserPrefs.xml" />
+    <None Include="ContextListApp.client\.vs\ContextListApp\xs\project-cache\ContactListApp.client-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContextListApp\xs\project-cache\ContextListApp.client-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContextListApp\xs\project-cache\ContactListApp.Shared-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContextListApp\xs\project-cache\ContactListApp.DAL-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContextListApp\xs\project-cache\ContactListApp.API-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContextListApp\xs\project-cache\ContactListApp.BAL-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContacttListApp\xs\UserPrefs.xml" />
+    <None Include="ContextListApp.client\.vs\ContacttListApp\xs\project-cache\ContactListApp.client-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContacttListApp\xs\project-cache\ContactListApp.Shared-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContacttListApp\xs\project-cache\ContactListApp.DAL-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContacttListApp\xs\project-cache\ContactListApp.API-Debug.json" />
+    <None Include="ContextListApp.client\.vs\ContacttListApp\xs\project-cache\ContactListApp.BAL-Debug.json" />
+  </ItemGroup>
+</Project>
